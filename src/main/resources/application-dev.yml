@@ -1,0 +1,17 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://Aman:Root@mycluster.n2lch.mongodb.net/journalApp?retryWrites=true&w=majority&appName=MyCluster
+      auto-index-creation: true
+
+server:
+  port: 8080
+  servlet:
+    context-path: /journal
+
+logging:
+  level:
+    root: OFF
+    net:
+      engineeringdigest:
+        journalApp: DEBUG
